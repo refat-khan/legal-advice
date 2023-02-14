@@ -1,0 +1,961 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+}
+.text_center{
+    text-align: center;
+}
+/*==========topbar section============*/
+
+.topbar_section{
+    background: #eeee;
+    padding: 12px 0;
+}
+.topbar_section .topbar_parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topbar_section .topbar_parent .topbar_para p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.topbar_parent .topbar_icon ul {
+    display: flex;
+    list-style: none;
+}
+.topbar_parent .topbar_icon ul li{
+    margin-left: 20px;
+}
+.topbar_parent .topbar_icon ul li i {
+    color: black;
+    transition: 1s;
+}
+.topbar_parent .topbar_icon ul li i:hover{
+    color: darkblue;
+}
+/*====================header=============*/
+.header_section{
+    padding: 15px 0;
+}
+.header_section .header_parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_section .header_mail{
+    text-align: right;
+   
+}
+.header_section .header_mail li{
+    list-style:none ;
+}
+.header_section .header_mail li a{
+    text-decoration: none;
+}
+.header_section .header_parent h5{
+    font-size: 26px;
+    font-size: 700;
+}
+.header_section .header_parent .header_mail li h5 a{
+    color: red;
+}
+/*============menubar============*/
+.menubar_section{
+    background-color:black;
+    padding: 26px 0;
+}
+.menubar_section .menubar_parent ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menubar_parent ul{
+    list-style: none;
+    
+}
+.menubar_parent ul a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 25px 25px;
+    text-transform: uppercase;
+    /* position: relative; */
+    transition: .5s;
+}
+.menubar_parent ul a:hover{
+    background: red;
+    height: 100%;
+    width: 100%;
+}
+/* .menubar_parent ul a::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: red;
+    position: absolute;
+    padding: 10px;
+    left: 11%;
+    z-index: -1;
+} */
+
+/*=============banner=============*/
+.banner_section{
+    background: url("../img/NLG-Homepage-V004.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 250px 0;
+}
+.banner_para {
+    background: #000;
+    opacity: .6;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+.banner_para h1{
+    color: #ffff;
+    font-weight: 800;
+    font-size: 42px;
+    padding: 15px;
+}
+.banner_para p{
+    color: #ffff;
+    font-weight: 400;
+    font-size: 32px;
+    padding-bottom: 15px;
+}
+/*==============content==============*/
+.content_section{
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+.content_section .content_parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.content_section .content_parent h1{
+    font-size: 46px;
+    font-weight: 700px;
+    position: relative;
+}
+.content_section .content_parent h1::after{
+        content: "";
+        position: absolute;
+        height: 4px;
+        width: 90px;
+        background: red;
+        margin-top: 72px;
+        margin-left: -77%;
+        transition: 1s;
+}
+.content_section .content_parent p{
+    font-size: 20px;
+    font-weight: 400px;
+    margin-top: 30px;
+}
+.content_section .content_parent .script{
+    margin-left: 20px;
+}
+.content_section .content_parent .content_img img{
+    width: 100%;
+}
+.content_section .content_parent .learn_button a{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 15px;
+    color: black;
+}
+
+.content_section .content_parent .learn_button{
+    padding: 50px 0;
+}
+/*================area===========*/
+.area_section{
+    background:#f9f9f9;
+    margin: 30px 0;
+}
+.area_section .area_content{
+    padding: 10px 0;
+}
+.area_section .area_text h1{
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px 0;
+    position: relative;
+}
+.area_section .area_text h1::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0px;
+    background: red;
+    margin-top: 32px;
+    margin-left: 100;
+    transition: 1s;
+    margin-left: -135px;
+}
+.area_section .area_text h1:hover::after{
+    width: 63px;
+    cursor: pointer;
+}
+
+.area_section .area_text p{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.area_section .area_parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin: 80PX 0;
+    padding: 20px 10px;
+}
+.area_section .area_parent .image_iteam{
+    height: 85px;
+    width: 84px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+.area_section .area_parent .area_iteam{
+   background: white;
+    padding: 20px 10px; 
+    transition: 1s;
+    cursor: pointer;
+    transition: .5s;
+}
+.area_section .area_parent .area_iteam:hover{
+    box-shadow: 6px 6px 10px black;
+    /* transform: scale(1.2); */
+}
+.area_section .area_parent .area_iteam h3{
+    font-size: 20px;
+    padding: 18px 0;
+}
+.area_section .area_parent .area_iteam p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.area_iteam .area_button a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    transition: .5s;
+}
+.area_iteam .area_button a:hover{
+    background: green;
+    color: red;
+    box-shadow: 6px 6px 10px green;
+}
+.area_iteam .area_button {
+    margin: 20px 0;
+    padding: 10PX;
+}
+
+/*===============video section==========*/
+.video_section .video_text h1{
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+}
+.video_section .video_text h1::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 90px;
+    background: red;
+    top: 60px;
+    left: 46%;
+}
+.video_section .video_text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 50px 0;
+}
+.video_section .video_parent{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 30px;
+    width: 100%;
+}
+/* .video_section .video_parent .legal_video{
+    margin: 40px 0;
+} */
+/*==========contact_section===========*/
+.contact_section {
+    background: url("../img/tt.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0;
+    background-position:center;
+    margin: 50px 0;
+}
+.contact_section .contact_pera h1{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: white;
+    margin: 10px 0;
+}
+.contact_section .contact_pera p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 16px;
+    color: white;
+    margin: 15px 0;
+}
+.contact_section .contact_parent .contact_button{
+    text-align: center;
+    margin-top: 40px;
+} 
+.contact_section .contact_parent .contact_button a{
+     border: 2px solid white;
+     color: white;
+     padding: 10px 15px;
+    text-decoration: none;
+    transition: .5s;
+}
+.contact_section .contact_parent .contact_button a:hover{
+    background: red;
+}
+/*=============blog_section============*/
+
+
+/*==============blog section==========*/
+.blog_section h1{
+    text-align: center;
+    font-size: 36px;
+    margin: 40px 0;
+    position: relative;
+}
+.blog_section h1::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 7%;
+    background: red;
+    top: 53px;
+    left: 48%;
+}
+.blog_section .blog_parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+  .blog_section .blog_parent .blog_iteam .blog_image img{
+      width: 100%;
+  }
+
+.blog_section .blog_parent .blog_iteam .blog_image{
+    position: relative;
+}
+.blog_section .blog_parent .blog_iteam .blog_image .blog_date{
+        height: 80px;
+        width: 70px;
+        background: black;
+        color: white;
+        position: absolute;
+       bottom: 5px;
+       left: 20px;
+}
+.blog_parent .blog_iteam ul{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -38px;
+}
+.blog_parent .blog_iteam ul li{
+    list-style: none;
+}
+.blog_parent .blog_iteam ul li a{
+    color: rgba(0, 0, 0, 0.678);
+    text-decoration: none;
+    margin-left: 34px;
+    
+}
+.blog_author .rip{
+    color: red;
+    text-decoration: underline;
+}
+.blog_iteam .blog_text p{
+    font-size: 16px;
+    margin-right: 20px;
+    line-height: 25px;
+    margin-top: 5px;
+}
+.blog_iteam .blog_text .blog_button{
+    margin: 30px 0;
+}
+.blog_iteam .blog_text .blog_button a{
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px;
+    color: black;
+    transition: 1s;
+}
+.blog_iteam .blog_text .blog_button a:hover{
+    background:#0c2461;
+    color: white;
+}
+/*==============footer_section=============*/
+.footer_section{
+    background: #282628;
+    padding: 70px 0;
+    margin: 100px 0 0 0;
+    color: white;
+
+}
+.footer_section ul{
+    list-style: none;
+}
+.footer_section ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer_section h2{
+    margin:0px 0px 20px 0;
+}
+.footer_section .footer_parent{
+    display: flex;
+    justify-content: space-between;
+} 
+.footer_section .footer_parent .about_us{
+    max-width: 400px;
+}
+.footer_section .footer_parent .about_us p{
+    padding: 15px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    color: #ffffff9c;
+}
+.footer_section .footer_parent .fotter_icon ul{
+    display: flex;
+    list-style: none;
+}
+.footer_section .footer_parent .fotter_icon ul li{
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+/* .footer_section .footer_parent .fotter_icon ul li a {
+    border: 2px solid gray;
+    padding: 10px;
+    color: gray;
+    position: relative;
+    transition: .5s;
+    border-radius: 50%;
+} */
+.footer_section .footer_parent .fotter_icon ul li:hover{
+    background: white;
+    color: red;
+}
+.footer_section .footer_parent .fotter_icon ul li i:hover{
+    color: red;
+}
+.footer_section .footer_parent .quick_menu li{
+    padding: 8px 0;
+    border-bottom: 2px dotted white;
+}
+.footer_section .footer_parent .quick_menu a{
+    color: #ffffff9c;
+    transition: .5s;
+}
+.footer_section .footer_parent .quick_menu a:hover{
+    color: white;
+}
+.footer_section .footer_parent .address_icon li{
+    padding: 15px 0;
+}
+.footer_section .footer_parent .address_icon li a span{
+    margin-left: 10px ;
+}
+/*=================copyright================*/
+.section_copyright{
+    background: black;
+    padding: 10px 0;
+}
+.section_copyright p{
+    color: gray;
+    text-align: center;
+}
+/* ==================END============================ */
+
+
+
+/* ========================resposive=================================== */
+
+@media only screen and (max-width:1250px){
+    .content_section .content_parent h1{
+        font-size: 30px;
+    }
+    .content_section .content_parent h1::after {
+        height: 3px;
+        margin-top: 50px;
+        margin-left: -172px;
+     }
+
+    .content_section .content_parent p{
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    .content_section .content_parent .learn_button{
+        padding: 40px 0;
+    }
+    
+}
+
+
+
+
+@media only screen and (max-width:1100px){
+
+    .banner_para{
+        width: 84%;
+    }
+    .banner_para h1 {
+        font-size: 40px;
+    }
+    .banner_para p{
+        font-size: 30px;
+    }
+
+    .content_section{
+        margin: 40px 0;
+    }
+
+    .content_section .content_parent h1{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .content_section .content_parent h1::after {
+        margin-top: 45px;
+        margin-left: -160px;
+      }
+      .content_section .content_parent p {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .content_section .content_parent .learn_button {
+        padding: 20px 0;
+      }
+      .content_section .content_parent .learn_button a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+
+    .area_section .area_parent{
+        margin: 50PX 0;
+    }
+
+
+}
+
+@media only screen and (max-width:950px){
+    .header_section .header_parent h5 {
+        font-size: 20px;
+    }
+    .header_section .header_parent .logo img{
+        height: 150px;
+    }
+
+    .menubar_section{
+        padding: 20px 0;
+    }
+    .menubar_parent ul a{
+        font-size: 15px;
+    }
+
+    .banner_section{
+        padding: 180px 0;
+    }
+    .banner_para{
+        width: 560px;
+    }
+    .banner_para h1{
+        font-size: 30px;
+        padding: 10px;
+    }
+    .banner_para p{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .content_section{
+        margin: 20px 0;
+    }
+
+    .content_section .content_parent{
+        grid-template-columns: 1fr;
+    }
+    .content_section .content_parent h1{
+        text-align: center;
+    }
+    .content_section .content_parent h1::after {
+        margin-top: 40px;
+        left: 65%;
+    }
+
+    .area_section{
+        margin: 0px;
+    }
+
+    .area_section .area_text h1{
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .area_section .area_text p{
+        font-size: 14px;
+        max-width: 530px;
+        text-align: center;
+        display: inline-block;
+    }
+    .area_section .area_parent{
+        margin: 30PX 0;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 35px;
+        padding: 10px 0px;
+    }
+    .area_section .area_parent .image_iteam{
+        height: 70px;
+        width: 70px;
+    }
+    .area_section .area_content{
+        padding: 0px;
+    }
+    .area_section .area_parent .area_iteam h3 {
+        font-size: 18px;
+        padding: 16px 0;
+      }
+      .area_section .area_parent .area_iteam p {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      .area_iteam .area_button {
+        margin: 15px 0;
+        padding: 25PX;
+      }
+      .area_iteam .area_button a{
+        font-size: 15px;
+        padding: 6px;
+      }
+      .video_section .video_text h1{
+        font-size: 30px;
+      }
+      .video_section .video_text h1::after {
+        height: 3px;
+        width: 75px;
+        top: 46px;
+        left: 42%;
+      }
+      .video_section .video_text p{
+        font-size: 14px;
+        margin: 25px 0;
+      }
+      .video_section .video_parent{
+        grid-auto-flow: unset;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+      }
+
+
+      .contact_section{
+        padding: 100px 0;
+        margin: 25px 0;
+      }
+      .contact_section .contact_pera h1{
+        font-size: 24px;
+        margin: 0px;
+      }
+      .contact_section .contact_pera p{
+        font-size: 14px;
+        margin: 8px 0;
+      }
+      .contact_section .contact_parent .contact_button{
+        margin-top: 25px;
+      }
+      .contact_section .contact_parent .contact_button a{
+        padding: 5px 10px;
+        font-size: 14px;
+      }
+
+      .blog_section h1{
+        font-size: 26px;
+        margin: 25px 0;
+      }
+      .blog_section h1::after {
+        height: 2px;
+        width: 7%;
+        top: 40px;
+      }
+      .blog_section .blog_parent{
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+      }
+
+      .blog_parent .blog_iteam ul li a{
+          font-size: 14px;
+      }
+      .blog_parent .blog_text h3{
+        font-size: 17px;
+        font-weight: 400;
+      }
+      .blog_iteam .blog_text p {
+        font-size: 15px;
+        line-height: 21px;
+      }
+      .blog_iteam .blog_text .blog_button {
+        margin: 18px 0;
+    }
+      .blog_iteam .blog_text .blog_button a{
+        padding: 6px;
+        font-size: 14px;
+      }
+      .footer_section{
+        padding: 40px 0;
+        margin: 24px 0 0 0;
+      }
+
+      .footer_section h2 {
+        margin: 0px;
+        font-size: 18px;
+      }
+
+      .footer_section .footer_parent .about_us p{
+        max-width: 262px;
+        line-height: 23px;
+        padding: 10px 0;
+      }
+      .footer_section .footer_parent .address{
+          max-width: 220px;
+      }
+      .footer_section ul li a{
+        font-size: 17px;
+      }
+      .section_copyright {
+        padding: 6px 0;
+        font-size: 15px;
+      }
+
+}
+
+
+/* ===================750================== */
+
+@media only screen and (max-width:750px){
+    .topbar_section .topbar_parent{
+        display: unset;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .topbar_section .topbar_parent .topbar_icon {
+    margin-top: 20px;
+    display: flex;
+    justify-content: right;
+    display: inline-block;
+    margin-left: 75%;
+
+}
+.topbar_section .topbar_parent .topbar_para p {
+	font-size: 14px;
+	text-align: center;
+}
+.header_section .header_parent h5{
+    font-size: 16px;
+}
+.header_section .header_parent p{
+    font-size: 14px;
+}
+.header_section .header_parent .logo img {
+	height: 110px;
+}
+.header_section .header_mail li a{
+    font-size: 14px;
+}
+
+
+/*===================menubar=========================*/
+.menubar_section {
+    padding: 13px 0;
+  }
+  .menubar_parent ul a {
+    font-size: 13px;
+    padding:15px;
+  }
+/* =========banner================= */
+.banner_section {
+    padding: 90px 0;
+  }
+  .banner_para h1 {
+    font-size: 20px;
+    padding: 0px;
+  }
+  .banner_para p {
+	font-size: 14px;
+}
+.banner_para {
+    width: 400px;
+  }
+  .content_section .content_parent h1 {
+    font-size: 20px;
+  }
+  .content_section .content_parent h1::after {
+    margin-top: 30px;
+  }
+  .content_section .content_parent p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .content_section .content_parent .learn_button a {
+    padding: 4px;
+    font-size: 14px;
+  }
+  .content_section .content_parent .learn_button {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+/* ============================ */
+
+.area_section .area_text h1 {
+	font-size: 17px;
+	padding: 6px 0;
+}
+
+.area_section .area_parent {
+    margin: 10PX 0;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+.area_section .area_parent .area_iteam h3 {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+  .area_section .area_parent .area_iteam p {
+	font-size: 14px;
+	line-height: 30px;
+}
+.area_iteam .area_button {
+    margin: unset;
+    padding: 10PX;
+  }
+
+
+  /* ===================legal======================== */
+  .video_section .video_text h1 {
+    font-size: 20px;
+    margin-bottom: unset;
+  }
+  .video_section .video_text h1::after {
+	width: 60px;
+	top: 35px;
+	left: 44%;
+}
+.video_section .video_text p {
+	font-size: 14px;
+	margin: 15px 0;
+	max-width: 450px;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+.video_section .video_parent {
+	grid-template-columns: 1fr;
+	margin: 20px 0;
+}
+
+
+/*======================contact==========================*/
+.contact_section .contact_pera h1 {
+	font-size: 18px;
+	margin: 0px;
+	word-spacing: 2px;
+	letter-spacing: 2px;
+}
+.contact_section .contact_parent .contact_button {
+	margin-top: 20px;
+}
+.contact_section {
+	padding: 60px 0;
+	margin: 15px 0;
+}
+
+.blog_section h1 {
+	font-size: 20px;
+	margin: 15px 0;
+}
+.blog_section h1::after {
+	height: 3px;
+	top: 30px;
+}
+
+
+/*============fotter=================*/
+.footer_section .footer_parent {
+    display: unset;
+}
+.footer_section .footer_parent .about_us{
+    max-width: unset;
+}
+.footer_section h2 {
+	font-size: 15px;
+    text-align: center;
+}
+.footer_section .footer_parent .about_us p {
+	max-width: unset; 
+	line-height: 25px;
+	padding: 10px 0;
+}
+.footer_section .footer_parent .quick_link{
+    margin: 25px 0;
+}
+
+.footer_section .footer_parent .address {
+	max-width: unset;
+}
+.footer_section .footer_parent .address{
+    margin-top: 40px;
+}
+.footer_section .footer_parent .address_icon li {
+    padding: 5px 0;
+  }
+  .footer_section ul li a {
+	font-size: 15px;
+}
+.section_copyright p {
+	font-size: 14px;
+}
+
+}
